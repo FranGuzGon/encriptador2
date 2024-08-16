@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+    
+
+    <main class="area">
+        <section class="area__encriptacion">
+            
+            <img src="./assets/Frame6.png" alt="logo de Alura" class="area__logo__alura">
+
+            <textarea class="area__encriptacion__presentacion__texto" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            
+            <div>
+                <p class="area__encriptacion__mensaje__validacion"> <img src="./assets/Group.png" alt="icono de signo exclamación"> Solo letras minusculas y sin acentos</p>
+            </div>
+            
+            
+            <div class="area__encriptacion__boton">
+                <button class="area__encriptacion__boton__encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="area__encriptacion__boton__desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+            
+        </section>
+        
+        <section class="area__visualizacion__texto">
+
+            <textarea class="area__visualizacion__texto__contenido" name="" id="" cols="20" rows="10"></textarea>
+
+            <div id="div1" class="area__visualizacion__texto__imagen1">Ningún Mensaje fue Encontrado</div>
+            <div id="div2" class="area__visualizacion__texto__imagen2">Ingrese el texto que desees encriptar o desencriptar</div>  
+            
+        
+            <div class="area__visualizacion__texto__boton">
+                <button class="area__visualizacion__texto__boton__copiar" onclick="botonCopiar()">Copiar</button>
+            </div>            
+            
+               
+        </section>    
+           
+
+    </main>
+
+    <footer>
+        
+        <p class="footer">Desarrollado por Francisco Guzmán</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

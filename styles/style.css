@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario:#F3F5FC; 
+    --color-secundario: #FFFFFF;
+    --color-terciario: #0A3871;
+    --color-cuaternario:#D8DFE8;
+    --color-quintario: #495057;
+    --color-sextenario: #343A40;
+    --fuente-Inter: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    width: 100%; 
+}
+
+
+.area {
+    display: flex;
+    align-items: center;
+    padding: 32px 2.77% 2% 2.77%; 
+    gap: 5.9%;
+}
+
+.area__logo__alura {
+    height: 4%;
+    width: 15%;
+    padding: 0% 0% 0% 0%;
+}
+
+.area__encriptacion {
+    width: 64.7%;
+    height: 944px;
+    display: flex;
+    flex-direction: column;          
+}
+
+.area__encriptacion__presentacion__texto {
+    width: 77.27%;
+    height: 288px;
+    margin-top: 80px;
+    margin-left: 22.72%;
+    font-family: var(--fuente-Inter);
+    font-size: 2rem;
+    background-color:var(--color-primario);
+    color: var(--color-terciario);
+    border: none;
+    text-transform: lowercase;
+}
+
+::placeholder {color: var(--color-terciario);}
+    .area__encriptacion__presentacion__texto:focus {
+        outline: none;
+    }
+    
+.area__encriptacion__mensaje__validacion {
+    width: 77.27%;
+    font-family: var(--fuente-Inter);
+    font-size: 0.75rem;
+    margin-left: 22.72%;
+    margin-top: 393px;
+    display: flex;
+    gap: 0.85%;
+    color: var(--color-quintario)
+       
+}
+
+.area__encriptacion__boton {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22.72%;
+    margin-top: 16px;
+    gap: 3.6%;
+    height: 7.09%;
+    width: 65.5%;
+} 
+
+.area__encriptacion__boton__encriptar {
+    
+    width: 48.2%;
+    border-radius: 24px;
+    height: 67px;
+    background-color: var(--color-terciario);
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.area__encriptacion__boton__desencriptar {
+    width: 48.2%;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-cuaternario);
+    color: var(--color-terciario);
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.area__visualizacion__texto {
+    width: 29.41%;
+    height: 944px;
+    background-color: var(--color-secundario);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+.area__visualizacion__texto__contenido {
+    margin: 32px 10% 0 10%;
+    width: 84%;
+    height: 516px;
+    font-family: var(--fuente-Inter);
+    font-size: 2rem;
+    border-color: var(--color-secundario);
+    color: var(--color-terciario);
+    background-image: url("/assets/Muñeco.png");
+    background-size: 100% 60%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: var(--color-secundario)
+    
+    
+}
+
+.area__visualizacion__texto__contenido {
+    outline: none;
+}
+
+.area__visualizacion__texto__imagen {
+    
+    width: 84%;
+    height: 32.2%;
+    
+}
+
+.area__visualizacion__texto__imagen1{
+    color: var(--color-sextenario);
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    margin: 32px 8% 6% 8%;
+
+}
+
+.area__visualizacion__texto__imagen2{
+    color: var(--color-sextenario);
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    text-align: center;
+    text-align: center;
+    padding-bottom: 15%;
+    margin: 0% 8% 6% 8%;
+   
+}
+
+.area__visualizacion__texto__boton{
+    width: 84%;
+    margin-top: 16px;
+}
+
+.area__visualizacion__texto__boton__copiar {
+    height: 67px;
+    width: 100%;
+    margin-bottom: 7%;
+    border-radius: 24px;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    text-align: center;
+    display: none;
+
+}
+
+.footer{
+
+    padding: 0px;
+    text-align: center;
+    font-family: var(--fuente-Inter);
+    color: var(--color-terciario);
+
+}
+
+@media (max-width:800px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        width: 800px;
+       }
+   
+    .area {
+        flex-direction: column;
+        padding: 6.21% 5% 5% 5%;
+        height: 1174px;
+        gap: 64px;
+        
+    }
+
+    .area__logo__alura {
+        height: 4%;
+        width: 15%;
+        padding: 6.2% 0% 2% 0%;
+    }
+
+    .area__encriptacion{
+        width: 89.6%;
+        height: 862px;
+                
+    }     
+
+    .area__encriptacion__presentacion__texto{
+        width: 100%;
+        height: 596px;
+        margin: 13.47% 0 0 0;    
+    }
+
+    .area__encriptacion__mensaje__validacion{
+
+        margin: 0 0 0 0;
+    }
+    
+    .area__encriptacion__boton{
+        height: 67px;
+        width: 100%;
+        margin: 1.8% 0 0 0;
+        gap: 3.5%
+    } 
+
+    .area__encriptacion__boton__encriptar{
+        width: 48.25%;
+    }
+
+    .area__encriptacion__boton__desencriptar{
+        width: 48.25%;
+    }
+
+    .area__visualizacion__texto {
+        width: 89.6%;
+        height: 133px;
+    }
+
+    .area__visualizacion__texto__contenido{
+        width: 86%;
+        height: 180px; 
+        background-color: none;
+        background-image: none;
+        font-size: 1.5rem;
+        padding: 0px;
+        margin: 32px 0px 0 0px;
+        display: none;        
+    }
+
+    .area__visualizacion__texto__imagen1 {
+    
+        width: 90.7%;
+        height: 58px;
+        margin: 32px 4.65% 16px 4.65%;
+    }
+        
+    .area__visualizacion__texto__imagen2 {
+        width: 90.7%;
+        height: 48px;
+        margin: 0px 4.65% 32px 4.65%;
+        padding: 0 0 0 0;
+    }   
+
+    .area__visualizacion__texto__boton{
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .area__visualizacion__texto__boton__copiar {
+        height: 67px;
+        width: 90.6%;
+        margin: 32px;
+        border-radius: 24px;
+        background-color: var(--color-secundario);
+        color: var(--color-terciario);
+        font-family: var(--fuente-Inter);
+        font-size: 1rem;
+        text-align: center;
+        display: none;
+    
+    }
+    
+    .footer{
+        
+        margin: 5% 5% 5% 5%;
+        text-align: center;
+    }
+                
+    }
+    
+@media (max-width:480px) {
+    
+    body{
+        padding: 0%;
+        width: 480px;
+
+    }
+
+    .area{
+        flex-direction: column;
+        height: 893px;
+        padding: 0 4.2% 0 4.2%;
+        margin: 0;
+        gap: 0;
+        }
+
+
+    .area__logo__alura {
+        padding: 10% 0% 2% 0%;
+        width: 96px;
+        height: 40px;
+        }    
+    
+    .area__encriptacion {
+        width: 91.5%;
+        height: 643px;
+
+    }
+    .area__encriptacion__presentacion__texto{
+        height: 297px;
+        width: 91.5%;
+        padding: 0 0 0 0
+    }    
+    
+    .area__encriptacion__mensaje__validacion{
+        margin-top: 0px;
+        padding: 0 8% 0% 0
+    }
+
+    .area__encriptacion__boton {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 91.5%;
+        height: 158px;
+        margin-top: 18px;
+        padding: 0 0 0 0
+        }
+
+    .area__encriptacion__boton__encriptar{
+        height: 67px;
+        width: 91.5%;
+            
+        }
+        
+    .area__encriptacion__boton__desencriptar{
+        height: 67px;
+        width: 91.5%;
+        }
+
+    .area__visualizacion__texto{
+        height: 186px;
+        width: 91.5%;
+        margin: 7.1% 0 5% 0;
+    }
+
+    .area__visualizacion__texto__contenido {
+        background-image: none;
+        font-size: 1.5rem;
+        height: 186px;
+        width: 81.3%;
+        padding: 0px 32px 32px 32px;
+                
+    }    
+
+    .area__visualizacion__texto__boton__copiar{
+        height: 67px;
+        width: 81.3%;
+    }
+
+    .footer{
+        text-align: center;
+        margin: 32px 5% 0 5%;
+        padding: 0 8% 0% 8%
+     
+    
+}
+}
